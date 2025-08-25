@@ -75,3 +75,8 @@ A full-stack web application built with the **MERN** stack (MongoDB, Express.js,
 ```bash
 git clone https://github.com/binoysaren/School-Management-System.git
 cd School-Management-System
+
+###Backend Setup
+
+
+### frontend setup
