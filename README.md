@@ -7,8 +7,7 @@ A full-stack web application built with the **MERN** stack (MongoDB, Express.js,
 ---
 
 ## 🔗 Live Demo 
-- **Frontend:** https://edumatrixf.onrender.com
-- **Backend API:** https://edumatrix-x0gt.onrender.com
+ https://edumatrixf.onrender.com
 
 ---
 
