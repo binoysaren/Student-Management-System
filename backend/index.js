@@ -19,7 +19,7 @@ app.use(express.json({ limit: '10mb' }));
 //================= CORS Configuration ===============
 const allowedOrigins = [
   "http://localhost:3000", // local frontend
-  "https://school-management-system-r13k.onrender.com" // deployed frontend
+  "https://edumatrixf.onrender.com" // deployed frontend
 ];
 
 app.use(cors({
