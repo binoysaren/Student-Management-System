@@ -7,111 +7,72 @@ A full-stack web application built with the **MERN** stack (MongoDB, Express.js,
 ---
 
 ## 🔗 Live Demo 
- https://school-management-system-zzw9.vercel.app/
+- **Frontend:** https://edumatrixf.onrender.com
+- **Backend API:** https://edumatrix-x0gt.onrender.com
+
 ---
 
 ## 🚀 Features
 
-### 👤 User Roles
-
-* **Admin:** Create and manage students, teachers, classes, subjects.
-* **Teacher:** View classes, mark attendance, assign marks, create assignments.
-* **Student:** View attendance, marks, assignments, and communicate with teachers.
+### 👤 User Roles & Authentication
+- **Admin:** Full system access - create and manage students, teachers, classes, subjects, generate reports
+- **Teacher:** View assigned classes, mark attendance, assign grades, create and grade assignments
+- **Student:** View attendance, grades, assignments, submit work, communicate with teachers
+- **Google OAuth Integration** for seamless authentication
+- **JWT-based authentication** for secure API access
 
 ### 📚 Core Functionalities
+- **Dashboard:** Role-specific overview with key metrics and quick actions
+- **Student Management:** Complete CRUD operations for student profiles
+- **Faculty Management:** Teacher profile management and assignment to classes
+- **Attendance System:** Daily tracking with visual reports and analytics
+- **Gradebook:** Marks management with performance trends visualization
+- **Assignment System:** Create, distribute, submit, and grade assignments
+- **Notice Board:** School announcements and important information
+- **Communication:** Internal messaging system between users
+- **Complaint System:** Issue reporting and resolution tracking
 
-* Role-based dashboards
-* Attendance tracking with reports
-* Marks & performance evaluation
-* Assignment creation and submission
-* Data visualization through charts
-* Notice availability
-* Complains to issue a problem
-* Internal messaging
+### 📊 Advanced Features
+- Data visualization through interactive charts and graphs
+- Responsive design optimized for desktop, tablet, and mobile
+- Export functionality for reports and data
+- Search and filtering across all data entities
+- Real-time notifications for important events
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Technology Stack
 
-* **Frontend:** React.js, Material UI, Redux
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB
+### Frontend
+- **React.js** with Hooks for UI components
+- **Redux** for state management
+- **Material-UI** for responsive design components
+- **Chart.js** for data visualization
+- **React Router** for navigation
+
+### Backend
+- **Node.js** runtime environment
+- **Express.js** web application framework
+- **MongoDB** with Mongoose ODM for database
+- **JWT** for authentication
+- **Nodemailer** for email functionality
+- **Bcrypt** for password hashing
+
+### Deployment & Development
+- **Render** for hosting both frontend and backend
+- **MongoDB Atlas** for cloud database
+- **Git** for version control
 
 ---
 
-## 📦 Project Setup
+## 📦 Installation & Setup
 
-### Clone the Repository
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB Atlas account or local MongoDB installation
+- Git
 
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/binoysaren/School-Management-System.git
-```
-
-### Terminal 1: Backend Setup
-
-```bash
-cd backend
-npm install
-```
-
-Create a `.env` file in the `backend` folder and add:
-
-```env
-MONGO_URL=mongodb://127.0.0.1/school
-```
-
-If using MongoDB Atlas, replace with your connection string.
-
-Start the backend server:
-
-```bash
-npm start
-```
-
-### Terminal 2: Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm start
-```
-
-Navigate to: [http://localhost:3000](http://localhost:3000)
-Backend API will run on: [http://localhost:5000](http://localhost:5000)
-
----
-
-## ⚠️ Common Errors and Fixes
-
-### Network or Signup Error
-
-1. Go to `frontend/.env` and uncomment the first line.
-2. Restart frontend:
-
-```bash
-cd frontend
-npm start
-```
-
-If unresolved:
-
-1. Go to `frontend/src/redux/userRelated/userHandle.js`
-2. Add this line after imports:
-
-```js
-const REACT_APP_BASE_URL = "http://localhost:5000";
-```
-
-3. Replace `process.env.REACT_APP_BASE_URL` with `REACT_APP_BASE_URL`
-4. Repeat the process for all files ending with `Handle.js` in redux folders.
-
----
-
-## ⭐ Final Notes
-
-* Always start by signing up (not guest login)
-* Backend must be running before frontend
-* If using MongoDB Atlas, don't forget to whitelist IP and enable network access
-
----
-
+cd School-Management-System
