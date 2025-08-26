@@ -138,15 +138,15 @@ For production:
 ## 📸 Screenshots
 
 ### 🔐 Login Page  
-![Login Page](./login.png)
+![Login Page](./screenshots/login.png)
 
 ### 🏠 Dashboard (Admin)  
-![Admin Dashboard](./admin-dashboard.png)
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
 ### 👨‍🏫 Teacher Panel  
-![Teacher Dashboard](./teacher-dashboard.png)
+![Teacher Dashboard](./screenshots/teacher-dashboard.png)
 
 ### 👩‍🎓 Student Panel  
-![Student Dashboard](./student-dashboard.png)
+![Student Dashboard](./screenshots/student-dashboard.png)
 
 
