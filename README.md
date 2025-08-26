@@ -62,7 +62,6 @@ A full-stack web application built with the **MERN** stack (MongoDB, Express.js,
 - **MongoDB Atlas** for cloud database
 - **Git** for version control
 
----
 
 ## 📦 Installation & Setup
 
@@ -71,12 +70,83 @@ A full-stack web application built with the **MERN** stack (MongoDB, Express.js,
 - MongoDB Atlas account or local MongoDB installation
 - Git
 
-### 1. Clone the Repository
+### Clone the Repository:
 ```bash
-git clone https://github.com/binoysaren/School-Management-System.git
-cd School-Management-System
+git clone https://github.com/binoysaren/edumatrix.git
+cd edumatrix
+```
+Terminal 1: Backend Setup:
+```bash
+cd backend
+npm install
+```
+Create a `.env` file in the `backend` folder and add:
+  ```env
+PORT=5000
+MONGO_URL=your-mongodb-uri
+JWT_SECRET=your-secret-key
+  
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+  
+EMAIL=your-email@gmail.com
+EMAIL_PASS=your-app-password
+  
+CLIENT_URL=http://localhost:3000
 
-###Backend Setup
+```
+Start the backend server:
+```bash
+npm start
+```
+### Terminal 2: Frontend Setup
+```bash
+cd frontend
+npm install
+```
+Create a `.env` file in the `frontend` folder and add:
+ ```env
+REACT_APP_BASE_URL=http://localhost:5000
+SKIP_PREFLIGHT_CHECK=true
+REACT_APP_GOOGLE_CLIENT_ID=your-google-client-id
+```
+Run frontend:
+```bash
+npm start
+```
+🚀 Running the Project
+
+Start backend → runs on:
+```bash
+ http://localhost:5000
+```
+
+Start frontend → open in browser: 
+```bash
+http://localhost:3000
+```
+## ⭐ Final Notes
+
+* Always start by signing up.
+* Ensure backend is running before frontend.
+* For MongoDB Atlas, whitelist your IP and enable network access.
+For production:
+     * Backend deploy: Render / Railway 
+     * Frontend deploy: Netlify / Vercel / Render static site
+
+---
+## 📸 Screenshots
+
+### 🔐 Login Page  
+![Login Page](./screenshots/login.png)
+
+### 🏠 Dashboard (Admin)  
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+### 👨‍🏫 Teacher Panel  
+![Teacher Dashboard](./screenshots/teacher-dashboard.png)
+
+### 👩‍🎓 Student Panel  
+![Student Dashboard](./screenshots/student-dashboard.png)
 
 
-### frontend setup
