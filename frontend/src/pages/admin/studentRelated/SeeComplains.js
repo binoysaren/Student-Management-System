@@ -30,16 +30,26 @@ const SeeComplains = () => {
 
   const complainRows = Array.isArray(complainsList)
     ? complainsList.map((complain) => {
+        if (!complain) {
+          return {
+            user: "Unknown",
+            complaint: "No complaint",
+            date: "Invalid Date",
+            id: Math.random().toString(36).substr(2, 9), // fallback id
+          };
+        }
+
         const date = new Date(complain.date);
         const dateString =
           date.toString() !== "Invalid Date"
             ? date.toISOString().substring(0, 10)
             : "Invalid Date";
+
         return {
-          user: complain?.user?.name || "Unknown",
+          user: complain.user && complain.user.name ? complain.user.name : "Unknown",
           complaint: complain.complaint || "No complaint",
           date: dateString,
-          id: complain._id,
+          id: complain._id || Math.random().toString(36).substr(2, 9),
         };
       })
     : [];
